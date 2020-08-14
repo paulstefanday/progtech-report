@@ -142,7 +142,7 @@ const demo = [
 
 const structural = [
   {
-    question: "What issues do organisations who completed the survey focus on?",
+    question: "Organisations who completed the survey focus on:",
     data: [
       {
         text: "Workers rights",
@@ -169,7 +169,7 @@ const structural = [
     ],
   },
   {
-    question: "What is the staff size of organisations?",
+    question: "Organisations who completed the survey have a staff size of:",
     data: [
       { text: "0 - 5", percentage: "26.19%" },
       { text: "6 - 20", percentage: "33.33%" },
@@ -242,7 +242,8 @@ const App = (props) => {
 
       <ColorBox end index={0} p={0}>
         <GraphHeading id="respondents" text="Respondents" />
-        <Flex flexWrap="wrap">
+    <p>This survey was completed by more than 50 leaders from across the progressive sector in Australia</p>
+    <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={0} />
           ))}
