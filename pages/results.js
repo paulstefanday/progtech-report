@@ -595,9 +595,7 @@ const App = (props) => {
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
           <p>
-            The good news is that between us we have the tools and skills to
-            solve these problems collectively, and progressive organisations are
-            ready to collaborate to make this happen.
+            Collectively, we have the tools and capacity to solve the problems that we face - and progressive organisations are ready to collaborate to make this happen.
           </p>
           <p>
             Survey participants said they would consider sharing their current
