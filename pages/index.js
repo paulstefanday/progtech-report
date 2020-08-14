@@ -15,7 +15,7 @@ import Sidebar from "../components/Sidebar";
 const App = (props) => {
   return (
     <>
-        
+
 
 
       <Head>
@@ -41,7 +41,10 @@ const App = (props) => {
           Who are we?
         </Heading></ScrollAnimation>
  <p>
-        We're building a network to share the tech tools & skills we need for our movements to win. We'll share tools and code, run trainings and mentorships, and create a community who work together on solutions to shared challenges.
+        ProgTech is a network of progressive member organisations committed to teaming up on tech to win.
+        </p>
+        <p>
+        We want a world where progressive organisations and activists have the best tools possible, and the skills and support to use them.
         </p>
       </ColorBox>
       <ColorBox index={1}>
@@ -49,11 +52,11 @@ const App = (props) => {
           Why we did this?
         </Heading></ScrollAnimation>
     <p>
-        It’s hard enough to win progressive change. It’s harder when our tech doesn’t work for us, and when we’re trying to solve our common challenges in isolation. 
+        It’s hard enough to win progressive change. It’s harder when our tech doesn’t work for us, and when we’re trying to solve our common challenges in isolation.
 </p><p>
 This survey makes the challenges clear: organisations report that they’re constantly reinventing the wheel, operating in silos, using inadequate tools with insufficient skills, making do with minimal investment, that the tech space is exclusionary, that tech staff are often unsupported, and that we’re not doing the long-term movement-wide thinking on tech that we need.
 </p><p>
-It doesn’t have to be this way. Networks like the Progressive Coders Network (US), the Movement Cooperative (US) and the OPEN Tech Network (international) show us how much we have to gain from working and learning together on tech here in Australia. 
+It doesn’t have to be this way. Networks like the Progressive Coders Network (US), the Movement Cooperative (US) and the OPEN Tech Network (international) show us how much we have to gain from working and learning together on tech here in Australia.
 </p><p>
 But it will take organisations coming together as a network to build the relationships and trust needed for tech collaboration to take root.
 
@@ -63,7 +66,7 @@ But it will take organisations coming together as a network to build the relatio
       <ScrollAnimation  animateIn="flipInX"><Heading fontSize={[20, 30]} mb={4}>
             The survey
           </Heading></ScrollAnimation>
-          
+
           <p>This survey was completed by more than 50 leaders from across the progressive sector in Australia. Click below to see the results from the survey.</p>
           <Link href="/results"><Button>View results</Button></Link>
       </ColorBox>
