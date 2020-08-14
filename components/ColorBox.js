@@ -75,7 +75,7 @@ const ColorBox = ({
         // borderWidth: "3px",
         // borderColor: ['black', 'red', 'green', 'blue', 'orange'],
         // borderStyle: "solid",
-        marginBottom: ["-100px", "-150px", "-180px", "-220px", "-290px"]
+        marginBottom: ["-80px", "-150px", "-180px", "-220px", "-290px"]
       }}>
         <svg
           // style={}
