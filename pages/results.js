@@ -267,7 +267,7 @@ const App = (props) => {
       </ColorBox>
 
       <ColorBox end index={2} p={0}>
-        <Heading id="needs-analysis" fontSize={[20, 50]} maxWidth={"250px"} m={5}>
+        <Heading id="needs-analysis" fontSize={[30, 50]} maxWidth={"250px"} m={5}>
           Needs Analysis
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
