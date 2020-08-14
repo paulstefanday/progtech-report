@@ -181,6 +181,8 @@ const structural = [
   },
   {
     question: "How many digital staff do you have?",
+    subheading:
+      "(e.g. social media or project manager of digital project)",
     data: [
       { text: "0", percentage: "12.20%" },
       { text: "1 - 2", percentage: "39.02%" },
@@ -193,6 +195,8 @@ const structural = [
   },
   {
     question: "How many tech staff do you have?",
+    subheading:
+      "(e.g. developer, data scientist)",
     data: [
       { text: "0", percentage: "51.22%" },
       { text: "1 - 2", percentage: "31.71%" },
