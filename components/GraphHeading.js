@@ -21,7 +21,7 @@ const GraphHeading = ({ text }) => (
     position: "relative",
   }}
 >
-<Heading fontSize={[20, 50]} maxWidth={"250px"} my={5}>
+<Heading fontSize={[30, 50]} maxWidth={"250px"} my={[0, 5]}>
           {text}
         </Heading>
 </Box>

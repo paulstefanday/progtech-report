@@ -154,6 +154,7 @@ const theme = {
       bg: "white",
     },
   },
+  breakpoints: [ '40em', '52em', '64em', '90em', '110em' ],
   styles: {
     root: {
       fontFamily: "body",

@@ -232,7 +232,7 @@ const App = (props) => {
 
     <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
-        <Box pl={5}>
+        <Box pl={[4,5]}>
         <Box><Heading>1. Who took part in this report?</Heading></Box>
         <Box><Heading>2. What technology are organisations using?</Heading></Box>
         <Box><Heading>3. Needs Analysis</Heading></Box>
@@ -244,7 +244,7 @@ const App = (props) => {
         <GraphHeading text="Respondents" />
         <Flex flexWrap="wrap">
           {structural.map((data, index) => (
-            <BarGraph width={1 / 2} {...data} index={0} />
+            <BarGraph width={[1, 1 / 2]} {...data} index={0} />
           ))}
         </Flex>
       </ColorBox>
@@ -252,7 +252,7 @@ const App = (props) => {
         <GraphHeading text="Demographics" />
         <Flex flexWrap="wrap">
           {demo.map((data, index) => (
-            <BarGraph width={1 / 2} {...data} index={1} />
+            <BarGraph width={[1, 1 / 2]} {...data} index={1} />
           ))}
         </Flex>
       </ColorBox>
@@ -261,17 +261,16 @@ const App = (props) => {
         <GraphHeading text="Technology Stack" />
         <Flex flexWrap="wrap">
           {techStack.map((data, index) => (
-            <BarGraph width={1 / 2} {...data} index={3} />
+            <BarGraph width={[1, 1 / 2]} {...data} index={3} />
           ))}
         </Flex>
       </ColorBox>
-
 
       <ColorBox end index={2} p={0}>
         <Heading fontSize={[20, 50]} maxWidth={"250px"} m={5}>
           Needs Analysis
         </Heading>
-        <Box color="black" width={1 / 2} p={5} pt={0}>
+        <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
           <p>
             We all know anecdotally that the progressive sector’s tech isn’t
             working as well as we want it to - but what exactly are the problems
@@ -290,13 +289,13 @@ const App = (props) => {
       {/* Question 1 */}
       <ColorBox end index={3} p={0}>
         <Flex flexWrap="wrap">
-          <Box width={2 / 5} pt={6} pl={5}>
+          <Box width={[1, 2 / 5]} pt={6} pl={5}>
             <Quote
               size="28px"
               text="Being the only staff member with any understanding of the tools means if something has to happen fast, a lot of work gets put aside OR we can’t respond quickly"
             />
           </Box>
-          <ColorBox width={3 / 5} index={3}>
+          <ColorBox width={[1, 3 / 5]} index={3}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -373,7 +372,7 @@ const App = (props) => {
       {/* Question 2 */}
       <ColorBox end index={0} p={0}>
         <Flex flexWrap="wrap">
-          <ColorBox width={3 / 5} index={0}>
+          <ColorBox width={[1, 3 / 5]} index={0}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -440,7 +439,7 @@ const App = (props) => {
               </p>
             </Box>
           </ColorBox>
-          <Box width={2 / 5} pt={6} pr={5}>
+          <Box width={[1, 2 / 5]} pt={[0,6]} pr={[0,5]}>
             <Quote
               size="28px"
               text="I would love to talk to someone who has used our tech before so we don’t double up on mistakes"
@@ -456,7 +455,7 @@ const App = (props) => {
       {/* Question 3 */}
       <ColorBox end index={1} p={0}>
         <Flex flexWrap="wrap">
-          <Box width={2 / 5} pt={6} pl={5}>
+          <Box width={[1, 2 / 5]} pt={[0,6]} pl={[0,5]}>
             <Quote
               size="23px"
               text="[Following up with new volunteers quickly] isn't purely a technical problem, but the fact the [distributed network] tech doesn't exist means the organisational problem is much harder to solve."
@@ -466,7 +465,7 @@ const App = (props) => {
               text="We'd be massively excited to be involved in crafting collaborative tech solutions to support this effort"
             />
           </Box>
-          <ColorBox width={3 / 5} index={1}>
+          <ColorBox width={[1, 3 / 5]} index={1}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -539,7 +538,7 @@ const App = (props) => {
       {/* Question 4 */}
       <ColorBox end index={3} p={0}>
         <Flex flexWrap="wrap">
-          <ColorBox width={3 / 5} index={3}>
+          <ColorBox width={[1, 3 / 5]} index={3}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -589,7 +588,7 @@ const App = (props) => {
               text="We never ever get enough money through project funding to be able to invest properly in tech. I have a tiny core budget that does maintenance, just, but no room to grow or innovate at all."
             />
           </ColorBox>
-          <Box width={2 / 5} pt={6} pr={5}>
+          <Box width={[1, 2 / 5]} pt={[0,6]} pr={[0,5]}>
             <Quote
               size="28px"
               text="I think there’s so much more we could do but we don’t even know about it so it’s like we don’t know which skills are missing"
@@ -606,7 +605,7 @@ const App = (props) => {
         <Heading fontSize={[20, 50]} maxWidth={"250px"} m={5} mt={7}>
           Solutions
         </Heading>
-        <Box color="black" width={1 / 2} p={5} pt={0}>
+        <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
           <p>
             The good news is that between us we have the tools and skills to
             solve these problems collectively, and progressive organisations are
@@ -629,7 +628,7 @@ const App = (props) => {
       {/* Question 3 */}
       <ColorBox end index={1} p={0}>
         <Flex flexWrap="wrap">
-          <Box width={1 / 2}  >
+          <Box width={[1, 1 / 2]}  >
             <BarGraph
               width={1}
               index={1}
@@ -663,7 +662,7 @@ const App = (props) => {
 
 
           </Box>
-          <Box width={1/2} p={5} pl={0}>
+          <Box width={[1, 1/2]} p={5} pl={[5, 0]}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -740,7 +739,7 @@ const App = (props) => {
       {/* Question 3 */}
       <ColorBox end index={2} p={0}>
         <Flex flexWrap="wrap">
-          <ColorBox width={1 / 2} index={2}>
+          <ColorBox width={[1, 1 / 2]} index={2}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -789,7 +788,7 @@ const App = (props) => {
               </p>{" "}
             </Box>
           </ColorBox>
-          <Box width={1 / 2} >
+          <Box width={[1, 1 / 2]} >
           <BarGraph
               width={1}
               index={2}
@@ -824,7 +823,7 @@ const App = (props) => {
       {/* Question 3 */}
       <ColorBox end index={3} p={0}>
         <Flex flexWrap="wrap">
-          <Box width={1 / 2}>
+          <Box width={[1, 1 / 2]}>
 
 
 
@@ -851,7 +850,7 @@ const App = (props) => {
 
 
           </Box>
-          <ColorBox width={1 / 2} index={3}>
+          <ColorBox width={[1, 1 / 2]} index={3}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -905,7 +904,7 @@ const App = (props) => {
       {/* Question 3 */}
       <ColorBox end index={2} p={0}>
         <Flex flexWrap="wrap">
-          <ColorBox width={1 / 2} index={2}>
+          <ColorBox width={[1, 1 / 2]} index={2}>
             <Box
               sx={{
                 borderRadius: "25px",
@@ -956,7 +955,7 @@ const App = (props) => {
               </p>
             </Box>
           </ColorBox>
-          <Box width={1 / 2}  pr={5}>
+          <Box width={[1, 1 / 2]}  pr={5}>
           <BarGraph
               width={1}
               index={2}

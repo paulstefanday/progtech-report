@@ -48,7 +48,7 @@ const Bar = ({ text, percentage, description }) => (
 
 const BarGraph = ({ question, data, index, subheading, width, pt }) => {
   return (
-    <ColorBox width={width} index={index} pt={pt}>
+    <ColorBox width={width} index={index} pt={[0 ,pt]}>
       <ScrollAnimation  animateIn="flipInX">
         <Heading fontSize={[20, 30]} mb={4}>
           {question}

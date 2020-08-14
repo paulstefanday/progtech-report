@@ -69,9 +69,13 @@ const ColorBox = ({
     {children}
     {end && (
       <Box sx={{
-        marginBottom:"-240px", //[0, "-240px", "-360px"],
+        // marginBottom:"-240px", //[0, "-240px", "-360px"],
         zIndex: 11,
         position: "relative",
+        // borderWidth: "3px",
+        // borderColor: ['black', 'red', 'green', 'blue', 'orange'],
+        // borderStyle: "solid",
+        marginBottom: ["-100px", "-150px", "-180px", "-220px", "-290px"]
       }}>
         <svg
           // style={}
