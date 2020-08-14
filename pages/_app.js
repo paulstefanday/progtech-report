@@ -34,6 +34,9 @@ function MyApp({ Component, pageProps, router }) {
 <meta name="twitter:description" content={desc} />
 <meta name="twitter:image" content={image} />
 <meta name="twitter:card" content="summary_large_image"></meta>
+<link rel="icon" href="/favicon.png" type="image/gif" sizes="16x16"></link>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="icon" type="image/png" href="https://2020report.progtech.net.au/favicon.png"/>
       </Head>
  
         <Component {...pageProps} router={router} />
