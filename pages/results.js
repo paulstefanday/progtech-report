@@ -242,7 +242,14 @@ const App = (props) => {
 
       <ColorBox end index={0} p={0}>
         <GraphHeading id="respondents" text="Respondents" />
-    <p>This survey was completed by more than 50 leaders from across the progressive sector in Australia</p>
+  
+    <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
+          <p>
+           This survey was completed by more than 50 leaders from across the progressive sector in Australia
+          </p>
+      
+        </Box>
+  
     <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={0} />
