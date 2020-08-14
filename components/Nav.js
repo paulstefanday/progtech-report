@@ -107,6 +107,8 @@ const DesktopNav = () => (
   <>
     <Box mx="auto" /><Link  href="/">
       About</Link>
+      <Link  href="https://progtech.net.au/join">
+      join</Link>
     {/* 
       <Box className="dropdown-content">
         <NextLink href="/overview">
@@ -134,9 +136,9 @@ const DesktopNav = () => (
     <Link
       target="_blank"
       className="active"
-      href="https://form.typeform.com/to/C8Sthe"
+      href="https://progtech.typeform.com/to/ZAU0MgR5"
     >
-      Do Survey
+      Launch event
     </Link>
   </>
 );

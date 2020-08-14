@@ -64,7 +64,7 @@ But it will take organisations coming together as a network to build the relatio
             The survey
           </Heading></ScrollAnimation>
           
-          <p>This survey was completed by more than 50 leaders from across the progressive sector in Australia. The results are presented in three parts. Use the left navigation to view each one.</p>
+          <p>This survey was completed by more than 50 leaders from across the progressive sector in Australia. Click below to see the results from the survey.</p>
           <Link href="/results"><Button>View results</Button></Link>
       </ColorBox>
       </Box>

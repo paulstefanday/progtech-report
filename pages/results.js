@@ -491,11 +491,7 @@ const App = (props) => {
             digital skills they wanted to learn - most of which were skills that
             other participants said they were able to share. The majority of
             organisations want to collaborate but just haven’t had the
-            relationships or a space to do so. Organisations reported both a
-            short term and a long term gap. Our tech isn’t working for us, or
-            the communities we work with, on a day-to-day basis. But we’re also
-            not doing the long-term planning and building we need to set our
-            movements up for success in the future.
+            relationships or a space to do so. 
           </p>
         </Box>
 
@@ -668,36 +664,6 @@ const App = (props) => {
           <BarGraph
               width={1}
               index={2}
-              question="Which skills are you interested in learning?"
-              data={[
-                { text: "Data analytics/data science", percentage: "86.2%" },
-                { text: "Backend developer", percentage: "51.7%" },
-                { text: "Database management", percentage: "51.7%" },
-                { text: "Frontend developer", percentage: "51.7%" },
-                { text: "IT security", percentage: "44.8%" },
-                { text: "UI/UX design", percentage: "44.8%" },
-                { text: "Digital adversiting (social media, google ads)", percentage: "41.4%" },
-                { text: "Digital fundraising", percentage: "34.5%" },
-                { text: "Email (list management, delivery)", percentage: "34.5%" },
-                { text: "Social media mangement", percentage: "34.5%" },
-                { text: "General digital comms", percentage: "31%" },
-                { text: "General IT support", percentage: "24.1%" },
-              ]}
-            />
-
-
-          </Box>
-        </Flex>
-      </ColorBox>
-
-      {/* Question 3 */}
-      <ColorBox end index={3} p={0}>
-        <Flex flexWrap="wrap">
-          <Box width={1 / 2}>
-
-          <BarGraph
-              width={1}
-              index={3}
               question="Which skills are you able to share?"
               data={[{text: "Lead generation", percentage: "10.0%"},
               {text: "Comms", percentage: "40.0%"},
@@ -721,7 +687,38 @@ const App = (props) => {
               {text: "Data science", percentage: "5.0%"},]}
             />
       
+
+          </Box>
+        </Flex>
+      </ColorBox>
+
+      {/* Question 3 */}
+      <ColorBox end index={3} p={0}>
+        <Flex flexWrap="wrap">
+          <Box width={1 / 2}>
+
+    
      
+          <BarGraph
+              width={1}
+              index={3}
+              question="Which skills are you interested in learning?"
+              data={[
+                { text: "Data analytics/data science", percentage: "86.2%" },
+                { text: "Backend developer", percentage: "51.7%" },
+                { text: "Database management", percentage: "51.7%" },
+                { text: "Frontend developer", percentage: "51.7%" },
+                { text: "IT security", percentage: "44.8%" },
+                { text: "UI/UX design", percentage: "44.8%" },
+                { text: "Digital adversiting (social media, google ads)", percentage: "41.4%" },
+                { text: "Digital fundraising", percentage: "34.5%" },
+                { text: "Email (list management, delivery)", percentage: "34.5%" },
+                { text: "Social media mangement", percentage: "34.5%" },
+                { text: "General digital comms", percentage: "31%" },
+                { text: "General IT support", percentage: "24.1%" },
+              ]}
+            />
+
 
 
           </Box>
@@ -856,7 +853,7 @@ const App = (props) => {
       </ColorBox>
 
       <ColorBox end index={0} p={0}>
-        <GraphHeading text="Respondants" />
+        <GraphHeading text="Respondents" />
         <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={1 / 2} {...data} index={0} />
