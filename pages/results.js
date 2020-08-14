@@ -203,7 +203,7 @@ const structural = [
       { text: "3 - 4", percentage: "4.88%" },
       { text: "5 - 6", percentage: "4.88%" },
       { text: "7 - 10", percentage: "2.44%" },
-      { text: "21 - 10000", percentage: "4.88%" },
+      { text: "21 - 1000", percentage: "4.88%" },
     ],
   },
   {
@@ -622,8 +622,8 @@ const App = (props) => {
               pt={5}
               question="Would you consider helping contribute to developing new open tools for the progressive sector?"
               data={[
-                { text: "True", percentage: "85.71%" },
-                { text: "False", percentage: "14.29%" },
+                { text: "Yes", percentage: "85.71%" },
+                { text: "No", percentage: "14.29%" },
               ]}
             />
             <BarGraph
@@ -632,8 +632,8 @@ const App = (props) => {
               index={1}
               question="Would you or any other staff want to learn specific tech/digital skills through a workshop or mentoring program?"
               data={[
-                { text: "True", percentage: "90.48%" },
-                { text: "False", percentage: "9.52%" },
+                { text: "Yes", percentage: "90.48%" },
+                { text: "No", percentage: "9.52%" },
               ]}
             />
         <BarGraph
