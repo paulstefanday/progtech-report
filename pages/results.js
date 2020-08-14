@@ -226,7 +226,10 @@ const App = (props) => {
       </Head>
       <Nav />
 
-
+    <ColorBox end index={2} p={0}>
+        <GraphHeading text="Table of Contents" />
+      
+      </ColorBox>
 
       <ColorBox end index={0} p={0}>
         <GraphHeading text="Respondents" />
