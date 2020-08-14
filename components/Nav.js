@@ -173,9 +173,9 @@ class Nav extends React.Component {
         }}
         bg={this.state.bg}
       >
-        <NextLink className="logo" href="/">
+        <Link className="logo" href="https://progtech.net.au">
           <Image src="/logo.png" />
-        </NextLink>
+        </Link>
         {this.props.isMobile ? <MobileNav /> : <DesktopNav />}
       </Flex>
     );
