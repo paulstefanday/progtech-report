@@ -239,15 +239,16 @@ const App = (props) => {
         <Box><Heading><a href="#solutions">4. Solutions</a></Heading></Box>
         </Box>
       </ColorBox>
-
+      <div  id="respondents">
       <ColorBox end index={0} p={0}>
-        <GraphHeading id="respondents" text="Respondents" />
+        <GraphHeading text="Respondents" />
         <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={0} />
           ))}
         </Flex>
       </ColorBox>
+      </div>
       <ColorBox end index={1} p={0}>
         <GraphHeading text="Demographics" />
         <Flex flexWrap="wrap">
@@ -256,18 +257,19 @@ const App = (props) => {
           ))}
         </Flex>
       </ColorBox>
-
+<div  id="tech-stack">
        <ColorBox end index={3} p={0}>
-        <GraphHeading id="tech-stack" text="Technology Stack" />
+        <GraphHeading text="Technology Stack" />
         <Flex flexWrap="wrap">
           {techStack.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={3} />
           ))}
         </Flex>
       </ColorBox>
-
+      </div>
+      <div id="needs-analysis">
       <ColorBox end index={2} p={0}>
-        <Heading id="needs-analysis" fontSize={[30, 50]} maxWidth={"250px"} m={5}>
+        <Heading  fontSize={[30, 50]} maxWidth={"250px"} m={5}>
           Needs Analysis
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
@@ -285,6 +287,7 @@ const App = (props) => {
           </p>
         </Box>
       </ColorBox>
+      </div>
 
       {/* Question 1 */}
       <ColorBox end index={3} p={0}>
@@ -600,9 +603,9 @@ const App = (props) => {
           </Box>
         </Flex>
       </ColorBox>
-
+<div  id="solutions">
       <ColorBox end index={2} p={0}>
-        <Heading id="solutions" fontSize={[30, 50]} maxWidth={"250px"} m={5} mt={7}>
+        <Heading fontSize={[30, 50]} maxWidth={"250px"} m={5} mt={7}>
           Solutions
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
@@ -624,7 +627,7 @@ const App = (props) => {
         </Box>
 
       </ColorBox>
-
+      </div>
       {/* Question 3 */}
       <ColorBox end index={1} p={0}>
         <Flex flexWrap="wrap">
