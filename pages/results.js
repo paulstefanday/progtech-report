@@ -207,11 +207,11 @@ const structural = [
     subheading:
       "Yearly budget for tech & digital, not including staff salaries",
     data: [
-      { text: "0", percentage: "9.52%" },
-      { text: "1 - 10,000", percentage: "47.62%" },
-      { text: "10,001 - 50,000", percentage: "19.05%" },
-      { text: "50,001 - 100,000", percentage: "19.05%" },
-      { text: "200,001 - 500,000", percentage: "4.76%" },
+      { text: "$0", percentage: "9.52%" },
+      { text: "$1 - $10,000", percentage: "47.62%" },
+      { text: "$10,001 - $50,000", percentage: "19.05%" },
+      { text: "$50,001 - $100,000", percentage: "19.05%" },
+      { text: "$200,001 - $500,000", percentage: "4.76%" },
     ],
   },
 ];
@@ -605,7 +605,7 @@ const App = (props) => {
             digital skills they wanted to learn - most of which were skills that
             other participants said they were able to share. The majority of
             organisations want to collaborate but just haven’t had the
-            relationships or a space to do so. 
+            relationships or a space to do so.
 
           </p>
         </Box>
@@ -645,9 +645,9 @@ const App = (props) => {
                 {text: "No", percentage: "19.5%"},
               ]}
             />
-            
-         
-         
+
+
+
           </Box>
           <Box width={1/2} p={5} pl={0}>
             <Box
@@ -801,7 +801,7 @@ const App = (props) => {
               {text: "Nationbuilder trainings", percentage: "5.0%"},
               {text: "Data science", percentage: "5.0%"},]}
             />
-      
+
 
           </Box>
         </Flex>
@@ -812,8 +812,8 @@ const App = (props) => {
         <Flex flexWrap="wrap">
           <Box width={1 / 2}>
 
-    
-     
+
+
           <BarGraph
               width={1}
               index={3}
@@ -878,10 +878,11 @@ const App = (props) => {
                   <strong>Direct support</strong> and capacity injections during
                   rapid response moments
                 </li>
-              </ol>
-              <p>
+                <li>
                 <strong>Testing</strong> new tools and solutions collaboratively
-              </p>
+                </li>
+              </ol>
+          
             </Box>
           </ColorBox>
         </Flex>
