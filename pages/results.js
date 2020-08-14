@@ -234,8 +234,8 @@ const App = (props) => {
         <GraphHeading text="Table of Contents" />
         <Box pl={[4,5]}>
         <Box><Heading><a href="#respondents">1. Who took part in this report?</a></Heading></Box>
-        <Box><Heading><a href="#tech-stack">2. What technology are organisations using?</a></Heading></Box>
-        <Box><Heading><a href="#needs-analysis">3. Needs Analysis</a></Heading></Box>
+        <Box><Heading><a href="#tech-stack">2. What technology are organisations currently using?</a></Heading></Box>
+        <Box><Heading><a href="#needs-analysis">3. Needs Analysis - where are the gaps in progressive tech</a></Heading></Box>
         <Box><Heading><a href="#solutions">4. Solutions</a></Heading></Box>
         </Box>
       </ColorBox>
