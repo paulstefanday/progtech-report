@@ -500,7 +500,8 @@ const App = (props) => {
               The second most common response to this question, particularly frequent with large organisations, <strong>was better integrating tech tools.</strong>
               < /br>
               </p>
-              <ul>Other ‘wishes’ included:
+              <p>Other ‘wishes’ included:</p>
+              <ul>
                 <li>
                   Large data analysis projects
                 </li>
