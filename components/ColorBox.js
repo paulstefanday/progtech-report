@@ -69,7 +69,7 @@ const ColorBox = ({
     {children}
     {end && (
       <Box sx={{
-        marginBottom: [0, "-240px", "-360px"],
+        marginBottom:"-240px", //[0, "-240px", "-360px"],
         zIndex: 11,
         position: "relative",
       }}>
