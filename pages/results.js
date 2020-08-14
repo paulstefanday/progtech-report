@@ -602,7 +602,7 @@ const App = (props) => {
       </ColorBox>
 
       <ColorBox end index={2} p={0}>
-        <Heading id="solutions" fontSize={[20, 50]} maxWidth={"250px"} m={5} mt={7}>
+        <Heading id="solutions" fontSize={[30, 50]} maxWidth={"250px"} m={5} mt={7}>
           Solutions
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
@@ -632,6 +632,7 @@ const App = (props) => {
             <BarGraph
               width={1}
               index={1}
+              pt={5}
               question="Would you consider helping contribute to developing new open tools for the progressive sector?"
               data={[
                 { text: "True", percentage: "85.71%" },
@@ -790,6 +791,7 @@ const App = (props) => {
           </ColorBox>
           <Box width={[1, 1 / 2]} >
           <BarGraph
+          pt={5}
               width={1}
               index={2}
               question="Which skills are you able to share?"
@@ -830,6 +832,7 @@ const App = (props) => {
           <BarGraph
               width={1}
               index={3}
+              pt={5}
               question="Which skills are you interested in learning?"
               data={[
                 { text: "Data analytics/data science", percentage: "86.2%" },
@@ -957,6 +960,7 @@ const App = (props) => {
           </ColorBox>
           <Box width={[1, 1 / 2]}  pr={5}>
           <BarGraph
+         pt={5}
               width={1}
               index={2}
               question="Would your organisation be willing to share any technology with other progressive organisations?"
