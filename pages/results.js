@@ -232,7 +232,7 @@ const App = (props) => {
 
     <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
-      
+
       </ColorBox>
 
       <ColorBox end index={0} p={0}>
@@ -914,8 +914,7 @@ const App = (props) => {
                 fontSize={[20, 30]}
                 mb={4}
                 sx={{ background: "none !important" }}
-              >
-                This is where the Progressive Tech Network comes in
+              >This is where the Progressive Tech Network comes in
               </Heading>
               <p>
                 We are a growing network of progressive member organisations
@@ -931,8 +930,7 @@ const App = (props) => {
                 win progressive change.
               </p>
               <p>
-                <br />
-                <strong>
+                                <strong>
                   If your organisation hasn&rsquo;t yet started a conversation
                   about joining the network and you&rsquo;d like to hear more,{" "}
                 </strong>
