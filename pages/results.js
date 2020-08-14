@@ -492,6 +492,7 @@ const App = (props) => {
             other participants said they were able to share. The majority of
             organisations want to collaborate but just haven’t had the
             relationships or a space to do so. 
+            
           </p>
         </Box>
 
