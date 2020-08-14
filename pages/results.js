@@ -498,7 +498,7 @@ const App = (props) => {
               </p>
               <p>
               The second most common response to this question, particularly frequent with large organisations, <strong>was better integrating tech tools.</strong>
-              < /br>
+              <br />
               </p>
               <ul>Other ‘wishes’ included:
                 <li>
