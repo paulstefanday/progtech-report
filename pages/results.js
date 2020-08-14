@@ -234,9 +234,9 @@ const App = (props) => {
         <GraphHeading text="Table of Contents" />
         <Box pl={5}>
         <Box><Heading><a href="#respondents">1. Who took part in this report?</a></Heading></Box>
-        <Box><Heading><a href="#tech_stack">2. What technology are organisations using?</a></Heading></Box>
-        <Box><Heading>3. Needs Analysis</Heading></Box>
-        <Box><Heading>4. Solutions</Heading></Box>
+        <Box><Heading><a href="#tech-stack">2. What technology are organisations using?</a></Heading></Box>
+        <Box><Heading><a href="#needs-analysis">3. Needs Analysis</a></Heading></Box>
+        <Box><Heading><a href="#solutions">4. Solutions</a></Heading></Box>
         </Box>
       </ColorBox>
 
@@ -258,7 +258,7 @@ const App = (props) => {
       </ColorBox>
 
        <ColorBox end index={3} p={0}>
-        <GraphHeading id="tech_stack" text="Technology Stack" />
+        <GraphHeading id="tech-stack" text="Technology Stack" />
         <Flex flexWrap="wrap">
           {techStack.map((data, index) => (
             <BarGraph width={1 / 2} {...data} index={3} />
@@ -268,7 +268,7 @@ const App = (props) => {
 
 
       <ColorBox end index={2} p={0}>
-        <Heading fontSize={[20, 50]} maxWidth={"250px"} m={5}>
+        <Heading id="needs-analysis" fontSize={[20, 50]} maxWidth={"250px"} m={5}>
           Needs Analysis
         </Heading>
         <Box color="black" width={1 / 2} p={5} pt={0}>
@@ -603,7 +603,7 @@ const App = (props) => {
       </ColorBox>
 
       <ColorBox end index={2} p={0}>
-        <Heading fontSize={[20, 50]} maxWidth={"250px"} m={5} mt={7}>
+        <Heading id="solutions" fontSize={[20, 50]} maxWidth={"250px"} m={5} mt={7}>
           Solutions
         </Heading>
         <Box color="black" width={1 / 2} p={5} pt={0}>
