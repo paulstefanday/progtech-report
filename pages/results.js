@@ -233,7 +233,7 @@ const App = (props) => {
     <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
         <Box pl={5}>
-        <Box><Heading><a href="https://2020report.progtech.net.au/results#respondents">1. Who took part in this report?</a></Heading></Box>
+        <Box><Heading>1. Who took part in this report?</Heading></Box>
         <Box><Heading>2. What technology are organisations using?</Heading></Box>
         <Box><Heading>3. Needs Analysis</Heading></Box>
         <Box><Heading>4. Solutions</Heading></Box>
@@ -241,7 +241,7 @@ const App = (props) => {
       </ColorBox>
 
       <ColorBox end index={0} p={0}>
-        <GraphHeading text="Respondents" id="Respondents"/>
+        <GraphHeading text="Respondents" />
         <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={1 / 2} {...data} index={0} />
