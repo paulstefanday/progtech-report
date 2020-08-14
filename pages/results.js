@@ -21,6 +21,98 @@ const Quote = ({ text, size }) => {
   );
 };
 
+const techStack = [
+  {
+    question: "What database(s) do you use?",
+      data: [
+        {text: "Nationbuilder", percentage: "39.53%"},
+        {text: "Action Network", percentage: "18.60%"},
+        {text: "Custom built", percentage: "18.60%"},
+        {text: "Salesforce", percentage: "11.63%"},
+        {text: "Kepla", percentage: "6.97%"},
+        {text: "Autopilot", percentage: "4.65%"},
+        {text: "CiviCRM", percentage: "4.65%"},
+        {text: "Other", percentage: "23.26%"},
+        // {text: "Other: Union Ware, Member Solutions, Redicase, Looker, Raisers Edge, IMiS, Kudos, Campaign Monitor, Drip, Airtable"},
+      ],
+  },
+  {
+    question: "What website manager do you use?",
+      data: [
+        {text: "Wordpress", percentage: "48.84%"},
+        {text: "Nationbuilder", percentage: "39.53%"},
+        {text: "Custom built", percentage: "20.93%"},
+        {text: "Squarespace", percentage: "16.28%"},
+        {text: "Drupal", percentage: "16.28%"},
+        {text: "Other", percentage: "11.63%"},
+        // {text: "Other: Membership Solutions, Wix, Forestry CMS, Prismic CMS, Raisely"},
+      ],
+  },
+  {
+    question: "What do you use to send emails?",
+      data: [
+        {text: "Mailchimp", percentage: "39.53%"},
+        {text: "Nationbuilder", percentage: "37.21%"},
+        {text: "Action Network", percentage: "23.26%"},
+        {text: "Campaign Monitor", percentage: "18.60%"},
+        {text: "Custom built", percentage: "13.95%"},
+        {text: "Autopilot", percentage: "4.65%"},
+        {text: "Other", percentage: "20.93%"},
+        // {text: "Other: Membership Solutions, Braze, Mailgun, Active Campaign, CiviMail, Drip, Marketo, Supporterbase, Raisely"},
+      ],
+  },
+  {
+    question: "What do you use to create petitions and/or targeted emails to decision makers?",
+      data: [
+        {text: "DoGooder", percentage: "35.90%"},
+        {text: "Nationbuilder", percentage: "30.77%"},
+        {text: "Megaphone", percentage: "30.77%"},
+        {text: "Custom", percentage: "25.64%"},
+        {text: "Action Network", percentage: "25.64%"},
+        {text: "Change.org", percentage: "10.26%"},
+        {text: "CampaignNow", percentage: "7.96%"},
+        {text: "WordPress", percentage: "5.13%"},
+        {text: "Other", percentage: "10.26%"},
+        // {text: "Other: Survey Monkey, Engaging Networks, Community Run, New/Mode"},
+      ],
+  },
+  {
+    question: "What do you use to send SMS and/or P2P texts?",
+      data: [
+        {text: "Callhub", percentage: "54.16%"},
+        {text: "Twilio", percentage: "29.17%"},
+        {text: "Custom built", percentage: "4.17%"},
+        {text: "Other", percentage: "45.83%"},
+        // {text: "Other: ThruText, SMS Broadcast, SMS Magic, Plivo, DirectSMS, 5CentSMS, New/Mode, Spoke, Burst SMS, Vidcorp, Strive"},
+      ],
+  },
+  {
+    question: "What do you use to log contact with volunteers/members?",
+      data: [
+        {text: "Nationbuilder", percentage: "33.33%"},
+        {text: "Custom built", percentage: "23.33%"},
+        {text: "Callhub", percentage: "20.00%"},
+        {text: "Kepla", percentage: "6.67%"},
+        {text: "Salesforce", percentage: "6.67%"},
+        {text: "Other", percentage: "20.00%"},
+        // {text: "Other: Jira, Excel, RaisersEdge, Union Central, Pipedrive, Airtable"},
+      ],
+  },
+  {
+    question: "What do you use for fundraising?",
+      data: [
+        {text: "Raisely", percentage: "41.94%"},
+        {text: "Action Network", percentage: "22.58%"},
+        {text: "Custom", percentage: "22.58%"},
+        {text: "Nationbuilder", percentage: "19.35%"},
+        {text: "Chuffed", percentage: "12.90%"},
+        {text: "GoFundMe", percentage: "6.45%"},
+        {text: "Other", percentage: "6.45%"},
+        // {text: "Other: Salesforce, RaisersEdge"},
+      ],
+  }
+];
+
 // { text: "", percentage: "%" },
 const demo = [
   {
@@ -138,6 +230,35 @@ const App = (props) => {
         <title>ProgTech Network Australia</title>
       </Head>
       <Nav />
+
+
+
+      <ColorBox end index={0} p={0}>
+        <GraphHeading text="Respondents" />
+        <Flex flexWrap="wrap">
+          {structural.map((data, index) => (
+            <BarGraph width={1 / 2} {...data} index={0} />
+          ))}
+        </Flex>
+      </ColorBox>
+      <ColorBox end index={1} p={0}>
+        <GraphHeading text="Demographics" />
+        <Flex flexWrap="wrap">
+          {demo.map((data, index) => (
+            <BarGraph width={1 / 2} {...data} index={1} />
+          ))}
+        </Flex>
+      </ColorBox>
+
+       <ColorBox end index={3} p={0}>
+        <GraphHeading text="Technology Stack" />
+        <Flex flexWrap="wrap">
+          {techStack.map((data, index) => (
+            <BarGraph width={1 / 2} {...data} index={3} />
+          ))}
+        </Flex>
+      </ColorBox>
+
 
       <ColorBox end index={2} p={0}>
         <Heading fontSize={[20, 50]} maxWidth={"250px"} m={5}>
@@ -492,7 +613,7 @@ const App = (props) => {
             other participants said they were able to share. The majority of
             organisations want to collaborate but just haven’t had the
             relationships or a space to do so. 
-            
+
           </p>
         </Box>
 
@@ -853,22 +974,6 @@ const App = (props) => {
         </Flex>
       </ColorBox>
 
-      <ColorBox end index={0} p={0}>
-        <GraphHeading text="Respondents" />
-        <Flex flexWrap="wrap">
-          {structural.map((data, index) => (
-            <BarGraph width={1 / 2} {...data} index={0} />
-          ))}
-        </Flex>
-      </ColorBox>
-      <ColorBox end index={1} p={0}>
-        <GraphHeading text="Demographics" />
-        <Flex flexWrap="wrap">
-          {demo.map((data, index) => (
-            <BarGraph width={1 / 2} {...data} index={1} />
-          ))}
-        </Flex>
-      </ColorBox>
     </>
   );
 };
