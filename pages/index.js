@@ -41,11 +41,10 @@ const App = (props) => {
           Who are we?
         </Heading></ScrollAnimation>
  <p>
-        ProgTech is a network of progressive member organisations committed to teaming up on tech to win.
+        We are a growing network of progressive member organisations committed to teaming up on tech to win. We want a world where progressive organisations and activists have the best tools possible, and the skills and support to use them.
         </p>
-        <p>
-        We want a world where progressive organisations and activists have the best tools possible, and the skills and support to use them.
-        </p>
+        <p>The Progressive Tech Network is in its founding stages - and so we're focussed on learning about our shared needs, and the key interventions we can make through collaboration. When the network launches in late August, members will have access to a library of shared tools, resources and code; training and mentorship programs; and a networked community who work together on solutions to shared challenges.</p>
+        <p>Read more about who we are and how you can join <a href="https://progtech.net.au/">here</a>.</p>
       </ColorBox>
       <ColorBox index={1}>
       <ScrollAnimation  animateIn="flipInX"><Heading fontSize={[20, 30]} mb={4}>

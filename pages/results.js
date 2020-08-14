@@ -181,6 +181,8 @@ const structural = [
   },
   {
     question: "How many digital staff do you have?",
+    subheading:
+      "(e.g. social media or project manager of digital project)",
     data: [
       { text: "0", percentage: "12.20%" },
       { text: "1 - 2", percentage: "39.02%" },
@@ -193,6 +195,8 @@ const structural = [
   },
   {
     question: "How many tech staff do you have?",
+    subheading:
+      "(e.g. developer, data scientist)",
     data: [
       { text: "0", percentage: "51.22%" },
       { text: "1 - 2", percentage: "31.71%" },
@@ -207,11 +211,13 @@ const structural = [
     subheading:
       "Yearly budget for tech & digital, not including staff salaries",
     data: [
-      { text: "0", percentage: "9.52%" },
-      { text: "1 - 10,000", percentage: "47.62%" },
-      { text: "10,001 - 50,000", percentage: "19.05%" },
-      { text: "50,001 - 100,000", percentage: "19.05%" },
-      { text: "200,001 - 500,000", percentage: "4.76%" },
+      { text: "$0", percentage: "12.00%" },
+      { text: "$1 - $1,000", percentage: "9.09%" },
+      { text: "$1,001 - $5,000", percentage: "21.21%" },
+      { text: "$5,001 - $10,000", percentage: "15.15%" },
+      { text: "$10,001 - $50,000", percentage: "21.21%" },
+      { text: "$50,001 - $100,000", percentage: "24.24%" },
+      { text: "$200,001 - $500,000", percentage: "3.03%" },
     ],
   },
 ];
@@ -224,7 +230,10 @@ const App = (props) => {
       </Head>
       <Nav />
 
+    <ColorBox end index={2} p={0}>
+        <GraphHeading text="Table of Contents" />
 
+      </ColorBox>
 
       <ColorBox end index={0} p={0}>
         <GraphHeading text="Respondents" />
@@ -605,7 +614,7 @@ const App = (props) => {
             digital skills they wanted to learn - most of which were skills that
             other participants said they were able to share. The majority of
             organisations want to collaborate but just haven’t had the
-            relationships or a space to do so. 
+            relationships or a space to do so.
 
           </p>
         </Box>
@@ -645,9 +654,9 @@ const App = (props) => {
                 {text: "No", percentage: "19.5%"},
               ]}
             />
-            
-         
-         
+
+
+
           </Box>
           <Box width={1/2} p={5} pl={0}>
             <Box
@@ -801,7 +810,7 @@ const App = (props) => {
               {text: "Nationbuilder trainings", percentage: "5.0%"},
               {text: "Data science", percentage: "5.0%"},]}
             />
-      
+
 
           </Box>
         </Flex>
@@ -812,8 +821,8 @@ const App = (props) => {
         <Flex flexWrap="wrap">
           <Box width={1 / 2}>
 
-    
-     
+
+
           <BarGraph
               width={1}
               index={3}
@@ -878,10 +887,11 @@ const App = (props) => {
                   <strong>Direct support</strong> and capacity injections during
                   rapid response moments
                 </li>
-              </ol>
-              <p>
+                <li>
                 <strong>Testing</strong> new tools and solutions collaboratively
-              </p>
+                </li>
+              </ol>
+
             </Box>
           </ColorBox>
         </Flex>
@@ -904,8 +914,7 @@ const App = (props) => {
                 fontSize={[20, 30]}
                 mb={4}
                 sx={{ background: "none !important" }}
-              >
-                This is where the Progressive Tech Network comes in
+              >This is where the Progressive Tech Network comes in
               </Heading>
               <p>
                 We are a growing network of progressive member organisations
@@ -921,8 +930,7 @@ const App = (props) => {
                 win progressive change.
               </p>
               <p>
-                <br />
-                <strong>
+                                <strong>
                   If your organisation hasn&rsquo;t yet started a conversation
                   about joining the network and you&rsquo;d like to hear more,{" "}
                 </strong>
