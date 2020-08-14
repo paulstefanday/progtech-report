@@ -207,11 +207,13 @@ const structural = [
     subheading:
       "Yearly budget for tech & digital, not including staff salaries",
     data: [
-      { text: "$0", percentage: "9.52%" },
-      { text: "$1 - $10,000", percentage: "47.62%" },
-      { text: "$10,001 - $50,000", percentage: "19.05%" },
-      { text: "$50,001 - $100,000", percentage: "19.05%" },
-      { text: "$200,001 - $500,000", percentage: "4.76%" },
+      { text: "$0", percentage: "12.00%" },
+      { text: "$1 - $1,000", percentage: "9.09%" },
+      { text: "$1,001 - $5,000", percentage: "21.21%" },
+      { text: "$5,001 - $10,000", percentage: "15.15%" },
+      { text: "$10,001 - $50,000", percentage: "21.21%" },
+      { text: "$50,001 - $100,000", percentage: "24.24%" },
+      { text: "$200,001 - $500,000", percentage: "3.03%" },
     ],
   },
 ];
@@ -882,7 +884,7 @@ const App = (props) => {
                 <strong>Testing</strong> new tools and solutions collaboratively
                 </li>
               </ol>
-          
+
             </Box>
           </ColorBox>
         </Flex>
