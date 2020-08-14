@@ -23,7 +23,7 @@ const Quote = ({ text, size }) => {
 
 const techStack = [
   {
-    question: "What database(s) do you use?",
+    question: "What database(s) do organisations use?",
       data: [
         {text: "Nationbuilder", percentage: "39.53%"},
         {text: "Action Network", percentage: "18.60%"},
