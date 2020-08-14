@@ -241,7 +241,7 @@ const App = (props) => {
       </ColorBox>
       <div  id="respondents">
       <ColorBox end index={0} p={0}>
-<GraphHeading text="Respondents" subheading="This report is based off a comprehensive survey that was completed by more than 50 leaders from across the progressive sector in Australia." />
+<GraphHeading text="Respondents" subheading="This report is based off a comprehensive survey that was completed by more than 50 tech/digital staff from across the progressive sector in Australia." />
 
     <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
 
