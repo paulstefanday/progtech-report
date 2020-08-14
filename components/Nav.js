@@ -136,7 +136,7 @@ const DesktopNav = () => (
     <Link
       target="_blank"
       className="active"
-      href="https://progtech.typeform.com/to/ZAU0MgR5"
+      href="https://progtech.typeform.com/to/ZAU0MgR5#source=survey-report"
     >
       Launch event
     </Link>
