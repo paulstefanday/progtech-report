@@ -3,7 +3,7 @@ import { Box, Flex, Link, Image, Button, Heading } from "rebass";
 import NextLink from "next/link";
 import Bg from "../components/Bg";
 
-const GraphHeading = ({ text }) => (
+const GraphHeading = ({ text, subheading }) => (
 //   <Box width={1} bg="black" color="white" px={5} py={4}>
 //     <Heading fontSize={[25, 35]} sx={{ maxWidth: "500px" }} m={0}>
 //       {text}
@@ -24,6 +24,7 @@ const GraphHeading = ({ text }) => (
 <Heading fontSize={[30, 50]} maxWidth={"250px"} my={[0, 5]}>
           {text}
         </Heading>
+        {subheading && <p>{subheading}</p>}
 </Box>
 </Box>
 );

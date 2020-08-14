@@ -23,7 +23,7 @@ const Quote = ({ text, size }) => {
 
 const techStack = [
   {
-    question: "What database(s) do you use?",
+    question: "What database(s) do organisations use?",
       data: [
         {text: "Nationbuilder", percentage: "39.53%"},
         {text: "Action Network", percentage: "18.60%"},
@@ -36,7 +36,7 @@ const techStack = [
       ],
   },
   {
-    question: "What website manager do you use?",
+    question: "What website manager do organisations use?",
       data: [
         {text: "Wordpress", percentage: "48.84%"},
         {text: "Nationbuilder", percentage: "39.53%"},
@@ -47,7 +47,7 @@ const techStack = [
       ],
   },
   {
-    question: "What do you use to send emails?",
+    question: "What do organisations use to send emails?",
       data: [
         {text: "Mailchimp", percentage: "39.53%"},
         {text: "Nationbuilder", percentage: "37.21%"},
@@ -59,7 +59,7 @@ const techStack = [
       ],
   },
   {
-    question: "What do you use to create petitions and/or targeted emails to decision makers?",
+    question: "What do organisations use to create petitions and/or targeted emails to decision makers?",
       data: [
         {text: "DoGooder", percentage: "35.90%"},
         {text: "Nationbuilder", percentage: "30.77%"},
@@ -73,7 +73,7 @@ const techStack = [
       ],
   },
   {
-    question: "What do you use to send SMS and/or P2P texts?",
+    question: "What do organisations use to send SMS and/or P2P texts?",
       data: [
         {text: "Callhub", percentage: "54.16%"},
         {text: "Twilio", percentage: "29.17%"},
@@ -82,7 +82,7 @@ const techStack = [
       ],
   },
   {
-    question: "What do you use to log contact with volunteers/members?",
+    question: "What do organisations use to log contact with volunteers/members?",
       data: [
         {text: "Nationbuilder", percentage: "33.33%"},
         {text: "Custom built", percentage: "23.33%"},
@@ -93,7 +93,7 @@ const techStack = [
       ],
   },
   {
-    question: "What do you use for fundraising?",
+    question: "What do organisations use for fundraising?",
       data: [
         {text: "Raisely", percentage: "41.94%"},
         {text: "Action Network", percentage: "22.58%"},
@@ -109,7 +109,7 @@ const techStack = [
 // { text: "", percentage: "%" },
 const demo = [
   {
-    question: "What is your gender?",
+    question: "What is the gender of people who completed the survey?",
     data: [
       {
         text: "Female",
@@ -121,7 +121,7 @@ const demo = [
     ],
   },
   {
-    question: "What is your age?",
+    question: "What is the age of people who completed the survey?",
     data: [
       { text: "18 - 24", percentage: "4.9%" },
       { text: "25 - 34", percentage: "70.4%" },
@@ -130,7 +130,7 @@ const demo = [
     ],
   },
   {
-    question: "Do you identify as:",
+    question: "People who completed the survey identified as:",
     data: [
       { text: "A person of colour", percentage: "7.8%" },
       { text: "A person with a disability", percentage: "15.8%" },
@@ -142,7 +142,7 @@ const demo = [
 
 const structural = [
   {
-    question: "What issues does your organisation focus on?",
+    question: "Organisations who completed the survey focus on:",
     data: [
       {
         text: "Workers rights",
@@ -169,7 +169,7 @@ const structural = [
     ],
   },
   {
-    question: "What is your staff size?",
+    question: "Organisations who completed the survey have a staff size of:",
     data: [
       { text: "0 - 5", percentage: "26.19%" },
       { text: "6 - 20", percentage: "33.33%" },
@@ -180,7 +180,7 @@ const structural = [
     ],
   },
   {
-    question: "How many digital staff do you have?",
+    question: "How many digital staff do organisations have?",
     subheading:
       "(e.g. social media or project manager of digital project)",
     data: [
@@ -194,7 +194,7 @@ const structural = [
     ],
   },
   {
-    question: "How many tech staff do you have?",
+    question: "How many tech staff do organisations have?",
     subheading:
       "(e.g. developer, data scientist)",
     data: [
@@ -207,7 +207,7 @@ const structural = [
     ],
   },
   {
-    question: "What's your yearly tech & digital budget?",
+    question: "What are organisations' yearly tech & digital budget?",
     subheading:
       "Yearly budget for tech & digital, not including staff salaries",
     data: [
@@ -241,8 +241,14 @@ const App = (props) => {
       </ColorBox>
       <div  id="respondents">
       <ColorBox end index={0} p={0}>
-        <GraphHeading text="Respondents" />
-        <Flex flexWrap="wrap">
+<GraphHeading text="Respondents" subheading="This survey was completed by more than 50 leaders from across the progressive sector in Australia" />
+  
+    <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
+  
+      
+        </Box>
+  
+    <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={0} />
           ))}
