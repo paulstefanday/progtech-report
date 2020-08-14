@@ -8,8 +8,8 @@ import Footer from "../components/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
 
-const title = "2020 Australian Progressive Tech Survey"
-const desc = "This survey was completed by more than 50 leaders from across the progressive sector in Australia. This was created by The Progressive Tech Network. A team up on tech to win to move to a world where progressive organisations and activists have the best tools possible, and the skills & support to use them."
+const title = "The State of Progressive Tech in Australia - 2020 Report"
+const desc = "This report was created by the Progressive Tech Network and is based off a comprehensive survey that was completed by more than 50 tech/digital staff from across the progressive sector in Australia."
 const image = "https://progtech.net.au/images/2.jpg"
 function MyApp({ Component, pageProps, router }) {
   console.log(pageProps, router.pathname)
@@ -38,9 +38,9 @@ function MyApp({ Component, pageProps, router }) {
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="icon" type="image/png" href="https://2020report.progtech.net.au/favicon.png"/>
       </Head>
- 
+
         <Component {...pageProps} router={router} />
- 
+
       <ToastContainer
         position="bottom-right"
         autoClose={5000}
@@ -63,8 +63,8 @@ MyApp.getInitialProps = async (appContext) => {
       userAgent = appContext.ctx.req.headers['user-agent'] // get the user-agent from the headers
     } else {
       userAgent = navigator.userAgent // if you are on the client you can access the navigator from the window object
-  
-      
+
+
     }
     console.log(333, appProps)
     const isMobile = Boolean(userAgent.match(
