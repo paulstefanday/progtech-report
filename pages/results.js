@@ -242,12 +242,12 @@ const App = (props) => {
       <div  id="respondents">
       <ColorBox end index={0} p={0}>
 <GraphHeading text="Respondents" subheading="This survey was completed by more than 50 leaders from across the progressive sector in Australia" />
-  
+
     <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
-  
-      
+
+
         </Box>
-  
+
     <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={[1, 1 / 2]} {...data} index={0} />
@@ -850,7 +850,7 @@ const App = (props) => {
                 { text: "Frontend developer", percentage: "51.7%" },
                 { text: "IT security", percentage: "44.8%" },
                 { text: "UI/UX design", percentage: "44.8%" },
-                { text: "Digital adversiting (social media, google ads)", percentage: "41.4%" },
+                { text: "Digital advertising (social media, google ads)", percentage: "41.4%" },
                 { text: "Digital fundraising", percentage: "34.5%" },
                 { text: "Email (list management, delivery)", percentage: "34.5%" },
                 { text: "Social media mangement", percentage: "34.5%" },
