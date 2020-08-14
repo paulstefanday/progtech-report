@@ -1,6 +1,6 @@
 /* eslint no-unused-vars: 0 */
 import React, { useState } from "react";
-import { Flex, Heading, Button, Box, Text } from "rebass";
+import { Flex, Heading, Button, Box, Text, Image } from "rebass";
 import { Input } from "@rebass/forms";
 import Head from "next/head";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -21,7 +21,9 @@ const App = (props) => {
       <Head>
         <title>ProgTech Network Australia</title>
       </Head>
-      <Sidebar path={props.router.pathname} />
+      {!props.isMobile && <Sidebar path={props.router.pathname} />}
+
+      
       <Box
   sx={{
     // overflowY: "scroll",
@@ -31,12 +33,25 @@ const App = (props) => {
     // right: 0,
     // height: "100%",
     // width: "60%",
-    marginLeft: "40%",
+    ...!props.isMobile && { marginLeft: "40%" },
     position: "relative"
   }}
 >
+
+
       {/* <GraphHeading text="About the survey" /> */}
       <ColorBox index={0}>
+
+{props.isMobile && <>
+<Image sx={{ width: "150px" }} src="/logo.png" />
+    <Heading width={1} fontSize={[25, 40]}>
+      2020 <br /> Progressive <br />
+      Tech Survey
+    </Heading>
+    <Link href="/results"><Button mb={5}>View Results</Button></Link>
+</>}
+
+
       <ScrollAnimation  animateIn="flipInX"><Heading fontSize={[20, 30]} mb={4}>
           Who are we?
         </Heading></ScrollAnimation>
