@@ -17,19 +17,10 @@ export default class MyDocument extends Document {
     <Html lang="en">
       <Head>
 
-        <meta
-          name="description"
-          content="We team up on tech to win to move to a world where progressive organisations 
-and activists have the best tools possible, and the skills & support to use them."
-        />
-        <meta name="author" content="Progressive Tech Network" />
+
         <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
         {/* <link rel="icon" href="/static/favicon.ico" /> */}
-        <meta
-          key="viewport"
-          name="viewport"
-          content="initial-scale=1, minimum-scale=1, width=device-width"
-        />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;500;700&display=swap"
           rel="stylesheet"
