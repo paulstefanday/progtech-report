@@ -241,7 +241,7 @@ const App = (props) => {
       </ColorBox>
       <div  id="respondents">
       <ColorBox end index={0} p={0}>
-<GraphHeading text="Respondents" subheading="This report is based off a comprehensive survey that was completed by more than 50 leaders from across the progressive sector in Australia." />
+<GraphHeading text="Respondents" subheading="This report is based off a comprehensive survey that was completed by more than 50 tech/digital staff from across the progressive sector in Australia." />
 
     <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
 
@@ -500,7 +500,8 @@ const App = (props) => {
               The second most common response to this question, particularly frequent with large organisations, <strong>was better integrating tech tools.</strong>
               <br />
               </p>
-              <ul>Other ‘wishes’ included:
+              <p>Other ‘wishes’ included:</p>
+              <ul>
                 <li>
                   Large data analysis projects
                 </li>
@@ -594,9 +595,7 @@ const App = (props) => {
         </Heading>
         <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
           <p>
-            The good news is that between us we have the tools and skills to
-            solve these problems collectively, and progressive organisations are
-            ready to collaborate to make this happen.
+            Collectively, we have the tools and capacity to solve the problems that we face - and progressive organisations are ready to collaborate to make this happen.
           </p>
           <p>
             Survey participants said they would consider sharing their current
