@@ -232,7 +232,12 @@ const App = (props) => {
 
     <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
-
+        <Box pl={5}>
+        <Box><Heading>1. Who took part in this report?</Heading></Box>
+        <Box><Heading>2. What technology are organisations using?</Heading></Box>
+        <Box><Heading>3. Needs Analysis</Heading></Box>
+        <Box><Heading>4. Solutions</Heading></Box>
+        </Box>
       </ColorBox>
 
       <ColorBox end index={0} p={0}>
