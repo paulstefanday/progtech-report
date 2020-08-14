@@ -61,7 +61,7 @@ const MobileNav = () => {
       target: "_blank",
     },
   ];
-  
+
   if (!open)
     return (
       <>
@@ -109,7 +109,7 @@ const DesktopNav = () => (
       About</Link>
       <Link  href="https://progtech.net.au/join">
       join</Link>
-    {/* 
+    {/*
       <Box className="dropdown-content">
         <NextLink href="/overview">
           <a>Overview</a>
@@ -136,7 +136,7 @@ const DesktopNav = () => (
     <Link
       target="_blank"
       className="active"
-      href="https://progtech.typeform.com/to/ZAU0MgR5"
+      href="https://progtech.typeform.com/to/ZAU0MgR5#source=survey-report"
     >
       Launch event
     </Link>
