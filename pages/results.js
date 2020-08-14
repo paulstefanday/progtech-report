@@ -233,15 +233,15 @@ const App = (props) => {
     <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
         <Box pl={5}>
-        <Box><Heading>1. Who took part in this report?</Heading></Box>
-        <Box><Heading>2. What technology are organisations using?</Heading></Box>
+        <Box><Heading><a href="#respondents">1. Who took part in this report?</a></Heading></Box>
+        <Box><Heading><a href="#tech_stack">2. What technology are organisations using?</a></Heading></Box>
         <Box><Heading>3. Needs Analysis</Heading></Box>
         <Box><Heading>4. Solutions</Heading></Box>
         </Box>
       </ColorBox>
 
       <ColorBox end index={0} p={0}>
-        <GraphHeading text="Respondents" />
+        <GraphHeading id="respondents" text="Respondents" />
         <Flex flexWrap="wrap">
           {structural.map((data, index) => (
             <BarGraph width={1 / 2} {...data} index={0} />
@@ -258,7 +258,7 @@ const App = (props) => {
       </ColorBox>
 
        <ColorBox end index={3} p={0}>
-        <GraphHeading text="Technology Stack" />
+        <GraphHeading id="tech_stack" text="Technology Stack" />
         <Flex flexWrap="wrap">
           {techStack.map((data, index) => (
             <BarGraph width={1 / 2} {...data} index={3} />
