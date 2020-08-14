@@ -5,7 +5,8 @@ import NextLink from "next/link";
 import theme from "../styles/theme";
 import ColorBox from "../components/ColorBox";
 
-const Bar = ({ text, percentage }) => (
+const Bar = ({ text, percentage, description }) => (
+  <>
   <Box
     mb={2}
     sx={{
@@ -39,7 +40,10 @@ const Bar = ({ text, percentage }) => (
         {text}
       </Text>
     </Box>
+ 
   </Box>
+       {description && <p>{description}</p>}
+       </>
 );
 
 const BarGraph = ({ question, data, index, subheading, width, pt }) => {

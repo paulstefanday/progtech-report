@@ -32,8 +32,7 @@ const techStack = [
         {text: "Kepla", percentage: "6.97%"},
         {text: "Autopilot", percentage: "4.65%"},
         {text: "CiviCRM", percentage: "4.65%"},
-        {text: "Other", percentage: "23.26%"},
-        // {text: "Other: Union Ware, Member Solutions, Redicase, Looker, Raisers Edge, IMiS, Kudos, Campaign Monitor, Drip, Airtable"},
+        {text: "Other", percentage: "23.26%", description: "Other: Union Ware, Member Solutions, Redicase, Looker, Raisers Edge, IMiS, Kudos, Campaign Monitor, Drip, Airtable"},
       ],
   },
   {
@@ -44,8 +43,7 @@ const techStack = [
         {text: "Custom built", percentage: "20.93%"},
         {text: "Squarespace", percentage: "16.28%"},
         {text: "Drupal", percentage: "16.28%"},
-        {text: "Other", percentage: "11.63%"},
-        // {text: "Other: Membership Solutions, Wix, Forestry CMS, Prismic CMS, Raisely"},
+        {text: "Other", percentage: "11.63%", description: "Other: Membership Solutions, Wix, Forestry CMS, Prismic CMS, Raisely"},
       ],
   },
   {
@@ -57,8 +55,7 @@ const techStack = [
         {text: "Campaign Monitor", percentage: "18.60%"},
         {text: "Custom built", percentage: "13.95%"},
         {text: "Autopilot", percentage: "4.65%"},
-        {text: "Other", percentage: "20.93%"},
-        // {text: "Other: Membership Solutions, Braze, Mailgun, Active Campaign, CiviMail, Drip, Marketo, Supporterbase, Raisely"},
+        {text: "Other", percentage: "20.93%", description: "Other: Membership Solutions, Braze, Mailgun, Active Campaign, CiviMail, Drip, Marketo, Supporterbase, Raisely"},
       ],
   },
   {
@@ -72,8 +69,7 @@ const techStack = [
         {text: "Change.org", percentage: "10.26%"},
         {text: "CampaignNow", percentage: "7.96%"},
         {text: "WordPress", percentage: "5.13%"},
-        {text: "Other", percentage: "10.26%"},
-        // {text: "Other: Survey Monkey, Engaging Networks, Community Run, New/Mode"},
+        {text: "Other", percentage: "10.26%", description: "Other: Survey Monkey, Engaging Networks, Community Run, New/Mode"},
       ],
   },
   {
@@ -82,8 +78,7 @@ const techStack = [
         {text: "Callhub", percentage: "54.16%"},
         {text: "Twilio", percentage: "29.17%"},
         {text: "Custom built", percentage: "4.17%"},
-        {text: "Other", percentage: "45.83%"},
-        // {text: "Other: ThruText, SMS Broadcast, SMS Magic, Plivo, DirectSMS, 5CentSMS, New/Mode, Spoke, Burst SMS, Vidcorp, Strive"},
+        {text: "Other", percentage: "45.83%", description: "Other: ThruText, SMS Broadcast, SMS Magic, Plivo, DirectSMS, 5CentSMS, New/Mode, Spoke, Burst SMS, Vidcorp, Strive"},
       ],
   },
   {
@@ -94,8 +89,7 @@ const techStack = [
         {text: "Callhub", percentage: "20.00%"},
         {text: "Kepla", percentage: "6.67%"},
         {text: "Salesforce", percentage: "6.67%"},
-        {text: "Other", percentage: "20.00%"},
-        // {text: "Other: Jira, Excel, RaisersEdge, Union Central, Pipedrive, Airtable"},
+        {text: "Other", percentage: "20.00%", description: "Other: Jira, Excel, RaisersEdge, Union Central, Pipedrive, Airtable"},
       ],
   },
   {
@@ -107,8 +101,7 @@ const techStack = [
         {text: "Nationbuilder", percentage: "19.35%"},
         {text: "Chuffed", percentage: "12.90%"},
         {text: "GoFundMe", percentage: "6.45%"},
-        {text: "Other", percentage: "6.45%"},
-        // {text: "Other: Salesforce, RaisersEdge"},
+        {text: "Other", percentage: "6.45%", description: "Other: Salesforce, RaisersEdge"},
       ],
   }
 ];
