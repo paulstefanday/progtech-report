@@ -494,6 +494,7 @@ const App = (props) => {
                 you can't right now?
               </Heading>
               <p>
+                <strong>The most frequent tech desire across the sector is building custom tech.</strong> Both large and small organisations mentioned this as an ambition, particularly for building a new custom CRM to suit their campaigning and organising needs. Other tools mentioned included chatbots, peer-to-peer SMS, realtime monitoring and analytics dashboards, as well as automation and AI. Unions in particular frequently mentioned custom tech to support members.
               </p>
               <p>
               The second most common response to this question, particularly frequent with large organisations, <strong>was better integrating tech tools.</strong>
