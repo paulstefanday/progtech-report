@@ -241,7 +241,7 @@ const App = (props) => {
       </ColorBox>
       <div  id="respondents">
       <ColorBox end index={0} p={0}>
-<GraphHeading text="Respondents" subheading="This survey was completed by more than 50 leaders from across the progressive sector in Australia" />
+<GraphHeading text="Respondents" subheading="This survey was completed by more than 50 tech/digital staff from across the progressive sector in Australia." />
 
     <Box color="black" width={[1, 1 / 2]} p={5} pt={0}>
 
@@ -494,52 +494,29 @@ const App = (props) => {
                 you can't right now?
               </Heading>
               <p>
-                Survey respondents named a huge range of tech priorities over
-                the coming months, but themes included: <br />
-                <br />
               </p>
-              <ul>
-                <li>
-                  Significantly <strong>improving existing tools</strong>,
-                  particularly websites and CRMs
-                </li>
-                <li>
-                  <strong>Migrating to new tools</strong>, particularly new
-                  databases
-                </li>
-                <li>
-                  Further<strong> integrating existing tech&nbsp;</strong>
-                </li>
-                <li>
-                  Improving <strong>data analytics </strong>and reporting
-                </li>
-                <li>
-                  <strong>Fixing bugs</strong>, resolving errors and cleaning
-                  data
-                </li>
-                <li>
-                  Growing <strong>social media</strong> channels
-                </li>
-                <li>
-                  <strong>Training</strong> staff and volunteers in tech and
-                  digital campaigning
-                </li>
-                <li>
-                  <strong>Responding to COVID-19</strong> including setting up
-                  virtual events and better internal communications systems for
-                  remote working&nbsp;
-                </li>
-              </ul>
               <p>
-                <br />
-                The majority of short-term priorities focussed on
-                <strong> improving existing tools</strong>. For most
-                organisations, this meant changing from one off-the-shelf
-                database to another, rather than building new custom tools
-                in-house - likely because of the lack of in-house dev capacity
-                across the sector.{" "}
+              The second most common response to this question, particularly frequent with large organisations, <strong>was better integrating tech tools.</strong>
+              < /br>
               </p>
-            </Box>
+              <ul>Other ‘wishes’ included:
+                <li>
+                  Large data analysis projects
+                </li>
+                <li>
+                  Building more in-house tech capacity
+                </li>
+                <li>
+                  ‘Doing tech quicker’ to be more responsive, including reducing time it takes to launch actions, respond to external events, identify online leaders and diagnose issues.
+                </li>
+                <li>
+                  Creating an encrypted CRM to improve data security
+                </li>
+                <li>
+                  Improving organising tech, including distributed local group infrastructure and tools for taking ‘deep care’ of volunteer leaders
+                </li>
+                            </ul>
+                          </Box>
           </ColorBox>
         </Flex>
       </ColorBox>
