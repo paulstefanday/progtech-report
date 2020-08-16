@@ -4,6 +4,11 @@ import Theme from './theme'
 
 export default () => (
     <style>{`
+
+a, a:visited, a:link {
+  color: black;
+}
+
     body {
         margin: 0;
         font-family: Roboto, sans-serif;

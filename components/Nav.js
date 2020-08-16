@@ -105,8 +105,8 @@ const MobileNav = () => {
 
 const DesktopNav = () => (
   <>
-    <Box mx="auto" /><Link  href="/">
-      About</Link>
+    <Box mx="auto" />
+    
       <Link  href="https://progtech.net.au/join">
       join</Link>
     {/*

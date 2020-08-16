@@ -64,21 +64,17 @@ const ColorBox = ({
   p = 5,
   pt = 6,
   end = false,
+  background,
 }) => (
-  <Box sx={{ ...styles[getColor(index)] }} p={p} pt={pt} width={width}>
+  <Box sx={{ ...styles[getColor(index)], ...background && { backgroundColor: background } }} p={p} pt={pt} width={width}>
     {children}
     {end && (
       <Box sx={{
-        // marginBottom:"-240px", //[0, "-240px", "-360px"],
         zIndex: 11,
         position: "relative",
-        // borderWidth: "3px",
-        // borderColor: ['black', 'red', 'green', 'blue', 'orange'],
-        // borderStyle: "solid",
         marginBottom: ["-80px", "-150px", "-180px", "-220px", "-290px"]
       }}>
         <svg
-          // style={}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >
