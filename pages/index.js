@@ -465,6 +465,7 @@ const App = (props) => {
               color="black"
               p={[3, 4]}
               mr={[0, 5]}
+              mb={4}
             >
               <Heading
                 fontSize={[20, 30]}
@@ -542,6 +543,7 @@ const App = (props) => {
               color="black"
               p={[3, 4]}
               ml={[0, 5]}
+              mb={4}
             >
               {" "}
               <Heading
