@@ -244,7 +244,7 @@ const structural = [
     ],
   },
   {
-    question: "What are organisations' yearly tech & digital budget?",
+    question: "What are organisations' yearly tech & digital budgets?",
     subheading:
       "Yearly budget for tech & digital, not including staff salaries",
     data: [
@@ -269,7 +269,7 @@ const App = (props) => {
 
 
       <ColorBox end index={0} p={0}>
-        <Flex flexWrap="wrap"><Box width={[1, 1/2]}><GraphHeading text="2020 Progressive Tech Survey" /></Box>
+        <Flex flexWrap="wrap"><Box width={[1, 1/2]}><GraphHeading maxWidth="410px" text="State of Progressive Tech in Australia, 2020" /></Box>
         <Box display={["none", "block"]} width={[1, 1/2]} >
           <Image pt={[0,4]} maxWidth={"640px"} width={1} src="/images/laptop.png" />
         </Box>

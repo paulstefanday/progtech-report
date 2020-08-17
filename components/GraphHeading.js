@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import Bg from "../components/Bg";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const GraphHeading = ({ text, subheading, direction="Left" }) => (
+const GraphHeading = ({ text, subheading, direction="Left", maxWidth = "350px" }) => (
 //   <Box width={1} bg="black" color="white" px={5} py={4}>
 //     <Heading fontSize={[25, 35]} sx={{ maxWidth: "500px" }} m={0}>
 //       {text}
@@ -26,7 +26,7 @@ const GraphHeading = ({ text, subheading, direction="Left" }) => (
             animateIn={`fadeIn${direction}`}
             duration={0.5}
           >
-<Heading fontSize={[30, 50]} maxWidth={"350px"} my={[0, 5]}>
+<Heading fontSize={[30, 50]} maxWidth={maxWidth} my={[0, 5]}>
           {text}
         </Heading>
         </ScrollAnimation>
