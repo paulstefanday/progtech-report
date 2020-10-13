@@ -106,7 +106,7 @@ const MobileNav = () => {
 const DesktopNav = () => (
   <>
     <Box mx="auto" />
-    
+
       <Link  href="https://progtech.net.au/join">
       join</Link>
     {/*
@@ -136,9 +136,9 @@ const DesktopNav = () => (
     <Link
       target="_blank"
       className="active"
-      href="https://progtech.typeform.com/to/ZAU0MgR5#source=survey-report"
+      href="https://progtech.net.au/join"
     >
-      Launch event
+      JOIN
     </Link>
   </>
 );
