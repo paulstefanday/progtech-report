@@ -107,8 +107,6 @@ const DesktopNav = () => (
   <>
     <Box mx="auto" />
 
-      <Link  href="https://progtech.net.au/join">
-      join</Link>
     {/*
       <Box className="dropdown-content">
         <NextLink href="/overview">
