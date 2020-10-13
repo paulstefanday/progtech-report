@@ -276,12 +276,12 @@ const App = (props) => {
         </Flex>
       </ColorBox>
 
-      
+
 
       <ColorBox end index={2} p={0}>
         <GraphHeading text="Table of Contents" />
         <Box pl={[4, 5]} pr={[4, 5]}>
-        
+
         <Box>
             <Heading>
               <Link variant="link" href="#about-us">1. About the Progressive Tech Network</Link>
@@ -316,7 +316,7 @@ const App = (props) => {
 
       <ColorBox end index={3} p={0}>
         <Flex flexWrap="wrap">
-        
+
         <Box width={[1, 1 / 2]} >
         <div id="about-us">
           <GraphHeading
@@ -348,7 +348,7 @@ const App = (props) => {
           />
                </div>
         </Box>
-   
+
         <Box width={[1, 1 / 2]} >
           <GraphHeading
           direction="Right"
@@ -1104,17 +1104,10 @@ const App = (props) => {
                   <strong>fill out this form</strong>
                 </a>{" "}
                 to share what you&rsquo;re keen to get out of it and what your
-                organisation could offer.
-              </p>
-              <p>
-                We&rsquo;ll be discussing these survey results and more at our
-                launch on August 27, and we&rsquo;d love you to join us!{" "}
-                <a href="https://progtech.typeform.com/to/ZAU0MgR5#source=survey-report">
-                  Click here to RSVP
-                </a>{" "}
-                and if you have any questions, please get in touch at{" "}
+                organisation could offer. If you have any questions, please get in touch at{" "}
                 <a href="mailto:hello@progtech.net.au">hello@progtech.net.au</a>
               </p>
+            
             </Box>
           </ColorBox>
           <Box width={[1, 1 / 2]} pr={[0, 5]}>
